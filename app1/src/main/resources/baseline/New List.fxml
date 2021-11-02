@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000#000000 #000000#000000 #000000#000000 #000000#000000;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="baseline.NewList">
+   <children>
+      <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="601.0">
+         <children>
+            <Button mnemonicParsing="false" text="Add Item">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" text="Remove Item">
+               <HBox.margin>
+                  <Insets left="40.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" text="Main Menu">
+               <HBox.margin>
+                  <Insets left="300.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <Pane layoutY="69.0" prefHeight="339.0" prefWidth="611.0" style="-fx-background-color: #ffd700#ffd700;" AnchorPane.bottomAnchor="-8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="69.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <ListView layoutX="6.0" layoutY="5.0" prefHeight="318.0" prefWidth="601.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
