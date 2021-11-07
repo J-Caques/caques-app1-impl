@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="baseline.EditList">
    <children>
       <Pane layoutY="3.0" prefHeight="403.0" prefWidth="616.0" style="-fx-background-color: #ffd700#ffd700;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -29,6 +28,11 @@
             <Button mnemonicParsing="false" text="Remove Item">
                <HBox.margin>
                   <Insets left="40.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" text="Edit Item">
+               <HBox.margin>
+                  <Insets left="30.0" right="-90.0" top="10.0" />
                </HBox.margin>
             </Button>
             <Button mnemonicParsing="false" text="Main Menu">
