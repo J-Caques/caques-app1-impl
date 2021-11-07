@@ -1,0 +1,44 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class TodoListApplication{
+    +main()
+}
+
+class ListCreator{
+ -createList()
+}
+
+class AccessList{
+    +AccessList()
+}
+
+class EditList{
+  -additem()
+  -removeitem()
+  -changeDescription()
+  -changeDueDate()
+  -clearList()
+}
+
+class StoreList{
+    +storeList()
+}
+
+class MarkedList{
+    -markIncomplete()
+    -markComplete()
+}
+
+StoreList -- AccessList
+AccessList --> EditList
+AccessList --> MarkedList
+EditList --> StoreList
+ListCreator --> StoreList
+
+TodoListApplication <--StoreList
+TodoListApplication <--AccessList
+TodoListApplication <--EditList
+TodoListApplication <--MarkedList
+ListCreator --> TodoListApplication
+@enduml
